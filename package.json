@@ -13,19 +13,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "css": "^3.0.0",
-    "css-loader": "^6.8.1",
     "date-fns": "^2.30.0",
-    "eventemitter3": "^5.0.1",
     "js-cookie": "^3.0.5",
-    "loader": "^2.1.1",
-    "mini-css-extract-plugin": "^2.7.6",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "react-star-ratings": "^2.3.0",
-    "serialize-js": "^1.1.0",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
