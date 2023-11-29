@@ -4,7 +4,7 @@
 
 Built using Nextjs and React
 
-# It will be deployed on vercel but if you want to view on local clone the repo then do
+## Deployed on vercel click [here](https://under-armour-clone-six.vercel.app/) but if you want to view on local clone the repo then do
 
 ```bash
 npm install
