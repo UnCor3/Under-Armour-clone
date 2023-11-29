@@ -1,0 +1,20 @@
+.new-tag-container {
+    position: absolute;
+    width: min-content;
+    top: 0.17rem;
+    padding: .3125rem;
+}
+
+.new-tag-container > div {
+    display: flex;
+    height: min-content;
+    width: min-content;
+    color: rgb(72, 72, 72);
+    align-items: flex-start;
+}
+.new-tag-container > div > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+}

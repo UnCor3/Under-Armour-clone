@@ -1,0 +1,22 @@
+.teaser-wrapper {
+    display: block;
+    padding: 4rem 0;
+}
+
+.teaser-img img {
+    width: 100%;
+}
+
+
+.teaser-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.teaser-text > div:nth-child(1),.teaser-text > div:nth-child(3){
+    font-size: 0.8rem;
+}

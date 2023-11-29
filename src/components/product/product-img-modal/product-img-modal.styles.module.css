@@ -1,0 +1,115 @@
+.product-review-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    transition: all 300ms ease;
+}
+
+
+.product-review-close {
+    all: unset;
+    position: fixed;
+    top: 2rem;
+    right: 6rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.product-review-close[data-active="true"] {
+    display: none;
+}
+
+.close-stick {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: black;
+}
+
+.close-stick:nth-child(1) {
+    rotate: 45deg;
+}
+    
+.close-stick:nth-child(2) {
+    rotate: 135deg;
+}
+
+
+.product-review-close:hover {
+    background-color: grey;
+}
+
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-wrapper > img {
+    width: auto;
+    height: 100%;
+}
+
+.imgs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.slider-nav {
+    top: 2rem;
+    left: 2rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.dots {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.dots > div {
+    width: 10px;
+    height: 10px;
+    background: var(--ua-regular-black);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all ease 600ms;
+}
+
+
+
+.dots > div[data-active="true"] {
+    background: white;
+    border: 1px solid var(--ua-regular-black);
+}
+
+
+@media all and (min-width :1200px) {
+    .imgs-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

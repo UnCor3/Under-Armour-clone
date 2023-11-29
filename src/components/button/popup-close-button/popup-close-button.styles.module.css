@@ -1,0 +1,42 @@
+.popup-close {
+    all: unset;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-close:hover {
+    background-color: white;
+}
+
+.popup-close[data-active="true"] {
+    display: none;
+}
+
+.close-stick {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: black;
+}
+
+.close-stick:nth-child(1) {
+    rotate: 45deg;
+}
+    
+.close-stick:nth-child(2) {
+    rotate: 135deg;
+}
+
+
+
+

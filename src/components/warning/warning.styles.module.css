@@ -1,0 +1,22 @@
+.warning-container {
+  padding: 1rem 0.5rem;
+  width: 100%;
+  background-color: var(--ua-regular-black);
+  color: white;
+  border-top: rgb(255, 255, 255) 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  position: relative;
+  width: fit-content;
+}
+
+.close-button {
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: grey;
+}

@@ -1,0 +1,85 @@
+.hover-container {
+  all: unset;
+  position: fixed;
+  background: #ffff;
+  color: black;
+  width: 75%;
+  transform: translateX(-50%);
+  left: 50%;
+  max-width: 1500px;
+  display: none;
+  z-index: 2;
+  top: 98px;
+}
+
+.hover-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.cat-img {
+  flex-basis: 30%;
+  padding: 1.5rem;
+}
+
+.cat-content {
+  display: flex;
+  gap: 1.5rem;
+  flex-basis: 70%;
+}
+.cat-content > div {
+  flex: 1;
+}
+
+.hover-container > div img {
+  width: 100%;
+}
+
+.sub-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sub-titles > * {
+  cursor: pointer;
+}
+
+.sub-tit-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.sub-tit-content > * > span {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+.sub-tit-content > * > span:hover {
+  border-color: black;
+}
+
+.back-shadow {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  top: 98px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  right: 0;
+}
+
+@media all and (min-width: 1024px) {
+  .hover-container {
+    width: 100%;
+    display: block;
+  }
+}

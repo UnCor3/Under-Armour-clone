@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+}
+
+.status {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.error {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.explanation {
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+}
+
+._404-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contact {
+    margin: 2.5rem 0;
+}
+
+.contact > span {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.container > div:nth-child(2) {
+    display: none;
+}
+
+@media all and (min-width:1024px) {
+    .container {
+        max-width: unset;
+        text-align: left;
+    }
+     
+    .error-info {
+        padding: 0 2rem;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .container > div:nth-child(2) {
+        display: block;
+    }
+
+    .container > div {
+        flex: 1;
+    }
+
+
+    ._404-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    ._404-buttons > * {
+        width: 100%;
+    }
+}

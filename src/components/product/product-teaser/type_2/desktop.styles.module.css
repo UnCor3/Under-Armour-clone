@@ -1,0 +1,28 @@
+.teaser-wrapper {
+    display: flex;
+    padding: 2.5rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.teaser-wrapper > div {
+    width: 40%;
+    margin-right: 4rem;
+    padding-left: 2rem;
+}
+
+.teaser-text > div:nth-child(1){
+    text-align: left;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+.teaser-text > div:nth-child(2){
+    line-height: 1.5;
+    font-size: 0.80rem;
+}
+
+.teaser-img img {
+    width: 100%;
+}

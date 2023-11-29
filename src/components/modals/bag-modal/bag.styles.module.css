@@ -1,0 +1,133 @@
+.hover-container {
+    position: absolute;
+    width: 450px;
+    min-height: 400px;
+    max-height: 800px;
+    overflow-y: scroll;
+    top: 100%;
+    z-index: 2;
+    right: 0;
+    background-color: #fff;
+    color: black !important;
+    padding: 0rem 3rem;
+    display: flex;
+}
+
+.hover-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.bag-content {
+    font-size: 1rem;
+    flex-grow: 0.6;
+    display: flex;
+    align-items: center;
+}
+
+.bag-title {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    font-size: 1rem;
+    background-color: #fff;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.bag-item-top {
+ padding: 1rem 0;   
+}
+
+.bag-item-top  {
+    display: flex;
+    text-align: left;
+    gap: 0.5rem; 
+}
+
+.bag-item-top > div:first-child {
+    flex-basis: 35%;
+}
+
+.bag-item-top > div:last-child {
+    flex-basis: 65%;
+}
+
+
+.bag-item-top img {
+    width: 100%;
+}
+
+.item-info {
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.item-info > div:not(:first-child) {
+    font-weight: 400;
+    color: grey;
+}
+
+
+.item-info > div:last-child {
+    font-size: 0.8rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bag-item-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag-next {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #fff;
+    bottom: 0;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    flex-grow : 0.4
+}
+
+.bag-next > a {
+    all: unset;
+    padding: 0.5rem 2rem;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.bag-next > a:hover {
+    background-color: rgba(0, 0, 0, 0.668)
+}
+
+
+
+.back-shadow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 98px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    right: 0;
+}
+
+.subtotal {
+    display: flex;
+    justify-content : space-between;
+    margin-bottom : 1rem;
+}

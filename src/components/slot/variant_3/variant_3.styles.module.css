@@ -1,0 +1,86 @@
+.component-wrapper {
+    padding: 5%;
+}
+
+.component-title {
+    font-weight: 500;
+    padding: 0 0 1rem;
+    text-align: center;
+}
+
+
+.component-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2.5%;
+    column-gap: 5%;
+    row-gap: 1rem;
+}
+
+.component-carousel > * {
+    width: 47.5%;
+}
+
+.component-carousel a {
+    display: block;
+    width: 100%;
+}
+
+.component-carousel img {
+    width: 100%;
+}
+
+.component-shop-branch {
+    border-bottom: 2px solid var(--ua-regular-black);
+    width: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 2px;
+    line-height: 1.25rem;
+    font-size : 0.75rem;
+}
+
+.component-carousel div div {
+    padding-bottom: 0.5rem;
+}
+
+
+
+@media all and (min-width : 768px) {
+    .component-wrapper {
+        width: fit-content;
+        margin: 0 auto;
+        padding: unset;
+    }
+
+    .component-title {
+        padding: 40px 10% 0;
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+    
+    .component-carousel {
+        /* display: none; */
+        padding: unset;
+        padding-top: 2.223%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }    
+    
+    .component-shop-branch {
+        border: none;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .component-carousel > * {
+        width: min(256px,18.5vw);
+    }
+}
+
+
+@media all and (min-width : 1024px) {
+    .component-carousel { 
+        gap: 44px;
+    }
+}

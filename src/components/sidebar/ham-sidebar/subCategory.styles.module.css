@@ -1,0 +1,60 @@
+.subCat {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 100%;
+    top: 0;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.subCat > span {
+    padding: 1.125rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #f7f7f7;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.cat > div {
+    width: 100%;
+}
+
+.cat > div > a {
+    display: block;
+    padding: 1rem 4rem 1rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+} 
+
+.cat > div > a > svg {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+}
+
+.cat.extendable > span {
+    padding: 1rem 4rem 1rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+}
+
+
+.cat.extendable .extended {
+    transition: all 400ms ease;
+}
+
+.cat.extendable .extended > a {
+    display: block;
+    padding: 1rem 4rem 1rem 2rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 100%;
+}

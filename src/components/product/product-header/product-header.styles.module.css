@@ -1,0 +1,75 @@
+.product-header-container {
+  margin: 1rem;
+}
+
+.breadcrumbs {
+  color: #5f5f5f;
+}
+
+.breadcrumbs ul {
+  display: flex;
+}
+
+.breadcrumbs > ul > li > a {
+  border-bottom: 2px solid #1d1d1d;
+  text-transform: capitalize;
+}
+
+.breadcrumbs > ul > li:not(:last-child)::after {
+  content: "/";
+  margin: 0 0.25rem;
+}
+
+.product-header-container ul > li:last-child > a {
+  color: #1d1d1d;
+}
+
+.product-name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+.product-name h1 {
+  /* font-size: 1.5rem;
+    padding-right: 2.8rem; */
+  font-size: 1rem;
+  padding-right: 2.8rem;
+}
+
+.product-name .heart-icon {
+  position: absolute;
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 -1px 11px -3px rgba(148, 148, 148, 0.57);
+  right: 0;
+  top: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+}
+
+.heart-icon > svg > path:nth-child(2) {
+  fill: none;
+}
+
+.heart-icon[data-active="true"] > svg > path:nth-child(2) {
+  fill: black;
+}
+
+@media all and (min-width: 1024px) {
+  .breadcrumbs-wrapper {
+    margin-top: 0;
+  }
+
+  .product-name h1 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-header-container {
+    margin-top: 0;
+  }
+}

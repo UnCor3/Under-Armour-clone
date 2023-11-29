@@ -1,0 +1,23 @@
+.bottom-promo {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: var(--ua-regular-black);
+    color: #ffff;
+    padding: 1.2rem 0;
+}
+
+.bottom-promo > a {
+    position: relative;
+}
+
+.bottom-promo  span {
+    text-decoration: underline;
+    color: grey;
+}
+
+@media all and (min-width : 1024px) {
+    .bottom-promo {
+        display: block;
+    }
+}

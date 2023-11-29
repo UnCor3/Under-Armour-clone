@@ -1,0 +1,60 @@
+/**FreeReturnAndExchange styles start */
+
+
+.return-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.return-container > div {
+    display: flex;
+}
+
+.return-container > div:nth-child(1) {
+    justify-content: space-between;
+}
+
+
+.return-container > div:nth-child(1) > div {
+    align-items: flex-end;
+    display: flex;
+    column-gap: 1rem;
+    font-weight: 600;
+}
+
+
+.upper-text > svg {
+    align-self: flex-end;
+    rotate: 180deg;
+    transform-origin: center;
+    transition: all 300ms ease;
+}
+
+
+.upper-text > svg[data-active="true"]{
+    rotate: 0deg;
+}
+
+.return-text {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    font-size: 0.8rem;
+    transition: all 150ms ease;
+}
+
+.return-text > span {
+    text-decoration: underline;
+}
+
+
+.return-text[data-active="true"] {
+    padding-bottom: 0.5rem;
+}
+
+
+/**FreeReturnAndExchange styles end */

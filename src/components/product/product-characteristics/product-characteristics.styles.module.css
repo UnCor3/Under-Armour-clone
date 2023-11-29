@@ -1,0 +1,45 @@
+.product-characteristics {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding : 1rem;
+}
+
+.product-characteristics > div:first-child {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.product-characteristics > div:first-child > div {
+    width: min-content;
+    display: flex;
+    align-items: center;
+    padding: 2px 2.2rem;
+    cursor: pointer;
+}
+
+.product-characteristics > div:first-child > div[aria-selected="true"]:not([aria-selected="false"]) span {
+  text-decoration: underline;
+}
+
+.product-characteristics > div:first-child > div:nth-child(3) {
+    width: auto;
+}
+
+.product-characteristics > div:first-child > div:nth-child(1) {
+    padding-left: 0;
+}
+
+.product-characteristics > ul {
+    list-style: inside;
+    padding-left: 2.2rem;
+    font-size: .875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.product-characteristics .separated {
+    border-right: 1px solid #d0d0d0;
+}

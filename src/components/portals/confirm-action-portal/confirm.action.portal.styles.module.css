@@ -1,0 +1,12 @@
+.portal-wrapper {
+    position: fixed;
+    /* position: relative; */
+    z-index: 3;
+    top: 0;
+    background: red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

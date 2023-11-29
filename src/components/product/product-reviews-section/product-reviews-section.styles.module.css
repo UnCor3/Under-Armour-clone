@@ -1,0 +1,585 @@
+/**ReviewHeader styles start */
+
+
+.review-top {
+    padding: 1rem;
+    background-color: #f7f7f7;
+}
+
+.review-top > div:first-child {
+    display: flex;
+}
+
+.review-top > div:first-child > div:first-child {
+    border-right: 1px #1d1d1d solid;
+    padding-right: 0.7rem;
+}
+
+.review-top > div:first-child > div:first-child > span {
+    margin-left: 0.4rem;
+    font-size: 0.7;
+}
+
+.review-top > div:first-child > div:nth-child(2) {
+    padding-left: 0.7rem;
+}
+
+.review-top > span {
+    display: block;
+    margin-top: 1rem;
+    color: #5f5f5f;
+}
+
+.review-bottom {
+    background-color: #f7f7f7;
+    display: flex;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.122);
+    /**Remove */
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.6rem;
+    /**Remove */
+}
+
+.review-bottom > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+
+.review-bottom > div:nth-child(1) {
+    width: 100%;
+    padding: 0 0.5rem ;
+    margin: 0.2rem 0;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+}
+
+.search-box > input {
+    all: unset;
+    border: 1px solid #5f5f5f;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    width: 80%;
+    padding: 0.2rem;
+}
+
+
+.search-box > input + div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: 1px solid #5f5f5f;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: #5f5f5f;
+    color: white;
+}
+
+.review-container {
+    position: relative;
+}
+
+.review-bottom > div:nth-child(2) > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+
+.review-bottom > div:nth-child(2) > div:not(:last-child) {
+    border-right: 1px solid grey;
+}
+
+
+
+.review-content {
+    /**add */
+    /* padding: 1rem 1rem; */
+    /**add */
+    
+    margin-top: 1rem;
+    /**remove */
+}
+
+
+
+.review-content-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.4rem; /**Remove */
+}
+
+.review-content-top span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.review-content-top button {
+    all: unset;
+    border: 1px solid grey;
+    font-size: 0.8rem;
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    font-weight: 500;
+}
+
+.rating-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2rem;
+    padding: 1rem;
+    padding-right: 8rem;
+}
+
+.rating-info > div {
+    flex : 1;
+}
+
+.rating-info > div:nth-child(2) {
+    padding-right: 0rem;
+}
+
+
+.rating-info > div > div > span {
+    display: block;
+}
+
+.rating-title {
+    margin-bottom: 1rem;   
+}
+
+.rating-info > div:first-child > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.rating-info > div:first-child > div:nth-child(2) > div {
+    display: flex;
+}
+
+.rating-info > div:first-child > div:nth-child(2) span {
+    display: block;
+}
+
+.rating-info .star-rate {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.rating-info .star-rate > span:nth-child(1) {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.rating-info .star-rate > span:nth-child(2) {
+    flex-grow: 1;
+    border-radius: 0.2rem;
+    height: 0.6rem;
+    margin: auto;
+    background: #cecece;
+}
+
+.rating-info .star-rate > span:nth-child(2) > span {
+    width: 70%;
+    height: 100%;
+    background-color: #1d1d1d;
+}
+
+.rating-info .star-rate > span:nth-child(3) {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+
+.review-filter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: #f7f7f7;
+    padding: 1rem;    
+    position: relative;
+}
+
+
+.size-props-container {
+    display: flex;
+    flex-direction: column;
+    gap : 0.2rem;
+}
+
+.size-props {
+    display: flex;
+}
+
+.size-props > span:first-child {
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+    color: rgb(29,29,29);
+    /**30 */
+
+    font-size: 0.8rem;
+    /**Rmove */
+}
+
+.size-props > div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+    /**35 */
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+.size-bar {
+    border: 1px solid rgb(204, 204, 204);
+    height: 0.8rem;
+    position: relative;
+}
+
+.size-bar::before {
+    position: absolute;
+    content: '';
+    background: grey;
+    width: 6px;
+    height: 100%;
+}
+
+.size-bar::after {
+    content: '';
+    height: calc(100% + 7px);
+    width: 1px;
+    background: black;
+    position: absolute;
+    top: -3px;
+    left: 50%;
+}
+
+.size-bar > div:first-child{
+    width: 5%;
+    height: 100%;
+    background: rgb(51,51,51);
+    transform: translateX(-50%);
+}
+
+.size-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+.size-range > span:nth-child(2) {
+    text-align: right;
+}
+
+.overall-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.overall-specs {
+    display: flex;
+}
+
+.overall-specs > span:first-child {
+    flex-basis: 30%;
+}
+
+.overall-specs > div > span{
+    margin-left: 1rem;
+    /**no margin */
+}
+
+.overall-specs > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /** display: flex;
+    flex-basis: 45%;
+    justify-content: space-between; */
+}
+
+
+@media all and (min-width :768px) {
+    .rating-info {
+        flex-direction: row;
+    }
+}
+
+
+/**ReviewHeader styles end */
+
+/**Reviews styles start */
+
+.review {
+    display: flex;
+    padding: 2rem;
+    border: 1px solid rgb(168, 166, 166); 
+    border-radius: 0.1rem;
+    /**Remove */
+    flex-direction: column;
+    /**Remove */
+}
+
+.review > div:not(:nth-child(2)) {
+    flex-basis: 20%;
+}
+
+.review > div:nth-child(2) {
+    flex: 1 1;
+    gap: 2rem;
+}
+
+.review .personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; 
+    font-size: 0.85rem;
+}
+
+
+.personal-info .name {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.review .personal-info > div:first-child {
+    font-weight: 600;
+}
+.review .review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review .review-size-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.review-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review-content-title {
+    font-weight: 500;
+}
+
+.cs-pic-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+}
+
+
+.cs-pic {
+     /**Remove if need */
+    padding: 0 2rem;
+    display: flex;
+    /* border: 1px solid grey; */
+    height: 400px;
+     /**Remove if need */
+}
+
+.cs-pic > img {
+    width: 100%;
+    height: 100%;
+    cursor : pointer;
+}
+
+.cs-pics {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.4rem;
+    column-gap: 0.2rem;
+}
+
+.pagination-action button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 1rem;
+}
+
+.pagination-action button:not(:disabled) {
+    background-color: rgb(177, 177, 177);
+}
+
+.pagination-action button:not(:disabled):hover {
+    cursor: pointer;
+}
+
+
+.user-info > div:not(:first-child) > div  {
+    color: rgb(95, 95, 95);
+}
+.user-info > div:not(:first-child) > div > span {
+    font-weight: 500;
+}
+
+.size-props-container{
+    margin: unset;
+    margin-top: 2rem;
+}
+
+@media all and (min-width:735px) {
+
+    .review-middle {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .user-info {
+        display: block;
+    }
+
+    .review {
+        flex-direction: row;
+    }
+
+    .cs-pic {
+         height: 130px;
+    }
+
+    .cs-pic-wrapper {
+        width: auto;
+        height: 130px;
+    }
+
+
+    .review > div:not(:nth-child(2)) {
+        flex-basis: 25%;
+    }
+}
+
+@media all and (min-width : 900px) {
+    .rating-info {
+        gap: 15rem;
+        padding-right: 13rem;
+    }
+}
+
+
+/**Reviews styles end */
+
+
+
+/**QandA styles start */
+
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border: 1px grey solid;
+    border-radius: 0.1rem;
+}
+
+
+.question-text {
+    margin-top: 0.3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.question-text + span {
+    display: block;
+    margin-top: 2rem;
+    padding-left: 0.2rem;
+}
+
+.asker {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.answer-content {
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+    padding: 1rem 2rem;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.answer {
+    min-height: 4rem;
+    margin-top: 0.4rem;
+}
+
+
+button.answer-action {
+    background: white;
+    margin-right: 0.4rem;
+    cursor: pointer;    
+    padding: 0.3rem;
+}
+
+button.answer-action:hover {
+    font-weight: 500;
+    color: black;
+}
+
+button.answer-action:focus {
+    color: black;
+    border: 2px solid black;
+}
+
+
+/**QandA styles end */
+
+
+
+/**SortBy styles start */
+
+.sort-by {
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    width: 175px;
+    top: 100%;
+    z-index: 1;
+    right: 0;
+    height: min-content;
+}
+
+.sort-by > div[data-active="true"] {
+    background-color: #f7f7f7;
+}
+
+.sort-by > div {
+    padding: 0.2rem 2.5rem;   
+    cursor: pointer; 
+}
+
+.sort-by > div:hover {
+    background-color: #f7f7f7;
+}

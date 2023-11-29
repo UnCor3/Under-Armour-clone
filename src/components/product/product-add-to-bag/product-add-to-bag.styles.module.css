@@ -1,0 +1,163 @@
+.add-to-bag {
+  display: none;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.add-to-bag > button:first-child {
+  all: unset;
+  background-color: #dc0019;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+  color: #ffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.mobile-add-to-bag {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 2;
+  background-color: #ffff;
+  width: 100%;
+}
+
+.mobile-add-to-bag > button {
+  background-color: #dc0019;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  color: #ffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-to-bag > button:hover {
+  opacity: 0.75;
+}
+
+.add-to-bag > button:disabled {
+  opacity: 0.75;
+}
+
+.mobile-add-to-bag > button:hover {
+  opacity: 0.75;
+}
+
+.mobile-add-to-bag > button:disabled {
+  opacity: 0.75;
+}
+
+.loading-bars {
+  display: flex;
+  gap: 1rem;
+}
+
+.loading-bars > div {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  animation: flashWhite;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  border-radius: 100%;
+  animation-timing-function: ease;
+}
+
+.loading-bars > div:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.loading-bars > div:last-child {
+  animation-delay: 600ms;
+}
+
+.dt-fixed-btn-container {
+  display: none;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 84px;
+  transition: all ease 400ms;
+  background: #ffff;
+  border-bottom: 1px solid grey;
+  align-items: center;
+  z-index: 49;
+}
+
+.dt-fixed-btn-container.intercepting {
+  top: 98px;
+}
+
+.dt-fixed-btn-wrapper {
+  padding: 0 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dt-fixed-btn-wrapper .price {
+  margin-left: 1.5rem;
+}
+
+.dt-fixed-btn-wrapper button {
+  width: 300px;
+  padding: 0.8rem 0rem;
+  cursor: pointer;
+  background-color: #dc0019;
+  transition: all ease 400ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}
+
+.dt-fixed-btn-wrapper button:hover {
+  opacity: 0.5;
+}
+
+.info {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+@media all and (min-width: 1023px) {
+  .mobile-add-to-bag {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .dt-fixed-btn-container {
+    display: flex;
+  }
+
+  .add-to-bag {
+    display: block;
+  }
+}
+
+@keyframes flashWhite {
+  100% {
+    background-color: rgb(170, 168, 168);
+  }
+}

@@ -1,0 +1,15 @@
+.promo a {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    font-size: 0.72rem;
+    text-decoration: underline;
+}
+
+
+@media all and (min-width : 1024px) {
+    .promo {
+        padding : 0.45rem 0 0.8rem 0 ;
+    }
+}

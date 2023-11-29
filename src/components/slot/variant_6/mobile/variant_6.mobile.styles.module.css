@@ -1,0 +1,29 @@
+.slider-wrapper {
+  overflow: hidden;
+  margin-bottom: calc(5% + 2rem);
+}
+
+.module-wrapper {
+  margin: 2rem 0;
+}
+
+.shop-sport-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.module-bottom-promo-text {
+  text-decoration: underline;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ua-regular-black);
+  padding: 0.7rem 0;
+}
+
+@media all and (min-width: 768px) {
+  .module-wrapper {
+    display: none;
+  }
+}

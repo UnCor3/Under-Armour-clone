@@ -1,0 +1,14 @@
+.bar {
+    position: absolute;
+    background: black;
+}
+
+.bar:first-child {
+    transform-origin: center;
+    rotate: 45deg;
+}
+
+.bar:last-child {
+    transform-origin: center;
+    rotate: 135deg;
+}
