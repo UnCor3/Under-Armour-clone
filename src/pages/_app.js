@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer.component";
 import CatNavModal from "@/components/modals/cat-nav/cat-nav.modal";
 import Navbar from "@/components/navbar/navbar.component";
 import BottomPromo from "@/components/promo/bottom-promo/bottom-promo.component";
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
       <BottomPromo />
       <Warning />
       <Component {...pageProps} />
+      <Footer/>
     </EssentialContextsProvider>
   );
 }
