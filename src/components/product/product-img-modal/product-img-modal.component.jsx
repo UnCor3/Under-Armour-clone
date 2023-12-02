@@ -29,7 +29,6 @@ const ProductImgModal = ({ imgs, productImgPopUpHandler }) => {
           ))}
         </div>
       </div>
-
       <button
         className={css["product-review-close"]}
         data-active={JSON.stringify(isClosed)}
@@ -38,17 +37,22 @@ const ProductImgModal = ({ imgs, productImgPopUpHandler }) => {
         <div className={css["close-stick"]}></div>
         <div className={css["close-stick"]}></div>
       </button>
-
-      <SliderNavigationDots
-        imgs={imgs}
-        ref={divRef.current}
-        currentImg={currentIndex}
-        info={false}
-        indexInfo={false}
-        handleDotClick={handleDotClick}
-        dots={css["dots"]}
-        sliderNav={css["slider-nav"]}
-      />
+      <div className={css["slider-nav"]}>
+        <div style={{ color: "grey" }}>
+          {currentIndex + 1} of {imgs.length}
+        </div>
+      <div className={css["dots"]}>
+        {imgs.map((_, i) => (
+          <div
+            key={i}
+            onClick={() => {
+              handleDotClick(i);
+            }}
+            data-active={JSON.stringify(i === currentIndex)}
+          />
+        ))}
+      </div>
+    </div>
     </>
   );
 };
