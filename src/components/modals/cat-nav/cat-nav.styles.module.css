@@ -8,7 +8,7 @@
   left: 50%;
   max-width: 1500px;
   display: none;
-  z-index: 2;
+  z-index: 51;
   top: 98px;
 }
 
@@ -70,7 +70,7 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 2;
+  z-index: 50;
   top: 98px;
   background-color: rgba(0, 0, 0, 0.5);
   display: block;

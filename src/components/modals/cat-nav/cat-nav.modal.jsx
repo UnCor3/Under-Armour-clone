@@ -3,7 +3,6 @@ import { NavContext } from "../../../context/nav.context";
 import css from "./cat-nav.styles.module.css";
 import { useContext } from "react";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 
 const CatNavHoverMenu = ({ MENU_DATA, catHovered }) => {
   return (
